@@ -1,0 +1,55 @@
+services:
+  postgresql-db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=noesis_database
+      - POSTGRES_USER=noesis_user
+      - POSTGRES_PASSWORD=noesis_password
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U noesis_user -d noesis_database"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  django-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      bash -c "python manage.py wait_for_db &&
+               python manage.py migrate &&
+               python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./backend:/app
+      - media_volume:/app/media
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SECRET_KEY=development_secret_key
+      - DJANGO_DEBUG=True
+      - DATABASE_URL=postgres://noesis_user:noesis_password@postgresql-db:5432/noesis_database
+    depends_on:
+      postgresql-db:
+        condition: service_healthy
+
+  react-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - django-backend
+
+volumes:
+  postgres_data:
+  media_volume:

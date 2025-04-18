@@ -1,0 +1,186 @@
+/********** Page containers **********/
+.page-container {
+    background: var(--gradient-main);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-main);
+    min-height: var(--min-height);
+    padding: var(--spacing-big-pad);
+    padding-top: -10px;
+}
+
+.page-container-flex {
+    background: var(--gradient-main);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-main);
+    min-height: var(--min-height);
+    padding: var(--spacing-big-pad);
+    padding-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/********** Page header **********/
+.page-header {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+/********** Content container **********/
+.content-container {
+    max-width: var(--max-width-m);
+    margin: 0 auto;
+}
+
+.content-container h2 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-xxl);
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+/********** Form layouts **********/
+/***** Form layout for Login & Register *****/
+.form {
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-3xl) var(--spacing-3xl);
+    box-shadow: var(--shadow-md);
+    width: 80%;
+    max-width: var(--max-width-s);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+}
+
+.form label {
+    font-size: var(--font-size-base);
+    color: var(--color-text-tertiary);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    text-align: left;
+    padding-left: var(--spacing-md);
+    width: 100%;
+}
+
+.form input {
+    width: 90%;
+    background-color: var(--color-soft-cream);
+    color: var(--color-text-secondary);
+    border-radius: var(--border-radius-xxl);
+    border: 1px solid grey;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 18px;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-sm);
+}
+
+/***** Form layout for SetAvailability & Booking *****/
+.popout-form {
+    background-color: var(--color-secondary);
+    color: var(--color-text-tertiary);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    max-width: var(--max-width-m);
+    width: 35%;
+}
+
+.popout-form h3 {
+    color: var(--color-text-tertiary);
+    margin-bottom: var(--spacing-xl);
+    font-size: var(--font-size-xl);
+    text-align: center;
+}
+
+.popout-form select {
+    width: 25%;
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-lg);
+    border: 2px solid grey;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 16px;
+    color: var(--color-text-primary);
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: var(--dropdownArrowSvg);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 1em;
+    margin: 0 auto;
+    display: block;
+}
+
+.popout-form select:focus {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+}
+
+.popout-form select option {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-sm);
+    color: #eee;
+}
+
+.popout-form label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-secondary);
+}
+
+.popout-form textarea {
+    width: 100%;
+    padding: var(--spacing-m) var(--spacing-md);
+    border: 1px solid grey;
+    border-radius: var(--border-radius-md);
+    box-sizing: border-box;
+    background-color: var(--color-soft-cream);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    resize: none;
+    height: 100px;
+}
+
+.popout-form textarea::placeholder {
+    text: italic;
+    color: grey;
+}
+
+.popout-form input:focus {
+    border-color: var(--color-secondary);
+    box-shadow: var(--shadow-sm);
+}
+
+/********** Unread count for Notifications **********/
+.unread-stuff {
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+    border-radius: 50%;
+    padding: 2px 6px;
+}

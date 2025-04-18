@@ -1,0 +1,10 @@
+.footer-text {
+    text-align: center;
+    color: var(--color-text-tertiary);
+    padding: var(--spacing-xxl) 0px;
+    margin: 0px;
+    margin-top: auto;
+    position: relative;
+    background-color: var(--color-secondary);
+    width: 100%;
+}

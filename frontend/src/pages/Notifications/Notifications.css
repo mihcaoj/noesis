@@ -1,0 +1,117 @@
+.notifications-page {
+    padding: var(--spacing-big-pad) var(--spacing-lg) var(--spacing-lg);
+}
+
+.mark-all-read-button {
+    margin-bottom: var(--spacing-lg);
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.notification-item {
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    cursor: pointer;
+    transition:
+        transform 0.2s,
+        background-color 0.3s;
+    box-shadow: var(--shadow-sm);
+}
+
+.notification-item:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-accent);
+}
+
+.notification-item.unread {
+    border-left: 4px solid #6c63ff;
+}
+
+.notification-item h4 {
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: 1.1rem;
+}
+
+.notification-item p {
+    color: var(--color-soft-cream);
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: var(--font-size-base);
+    line-height: 1.4;
+}
+
+.notification-time {
+    color: var(--color-text-tertiary);
+    font-size: 0.8rem;
+    display: block;
+    margin: var(--spacing-sm) 0;
+    margin-bottom: var(--spacing-md);
+}
+
+.loading {
+    text-align: center;
+    color: var(--color-text-secondary);
+    padding: var(--spacing-3xl);
+}
+
+.no-notifications {
+    text-align: center;
+    color: var(--color-text-tertiary);
+    padding: var(--spacing-3xl);
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    margin-top: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.notification-text {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.notification-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-self: flex-start;
+}
+
+.notification-actions button {
+    padding: 8px 16px;
+    margin-top: -5px;
+    margin-bottom: var(--spacing-m);
+}
+
+.delete-notification-button {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin-left: auto;
+    transition: color 0.3s ease;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.delete-notification-button:hover {
+    color: #f44336;
+}
+
+.notification-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.mark-all-read-button {
+    margin-bottom: var(--spacing-lg);
+}

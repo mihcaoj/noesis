@@ -1,0 +1,88 @@
+:root {
+    /* Colors */
+    --color-primary: #edede9;
+    --color-secondary: #3a322e;
+    --color-accent: #d5bdaf;
+    --color-warm-taupe: #d6ccc2; /* Secondary background color for topic cards */
+    --color-soft-cream: #f5ebe0; /* Form fields and select elements */
+    --color-subtle-beige: #e3d5ca; /* Alternative interactive elements */
+
+    /* Button Colors */
+    --color-button: #c4a99a;
+    --color-topic-chips: #c4a99a;
+    --color-cards: #c4a99a;
+
+    --color-danger: #ff0000;
+    --color-success: #4caf50;
+
+    /* Rating Color */
+    --color-rating: #f0c04c;
+
+    /* Tutor Cards Color */
+    --color-tutor-card: #4a423e;
+    --color-search-bar: #4a423e;
+
+    /* Text Colors */
+    --color-text-primary: #f5f5f5;
+    --color-text-secondary: #3a322e;
+    --color-text-tertiary: #dedbd2;
+
+    /* Session Status Borders */
+    --color-pending: #ffa726;
+    --color-completed: #2196f3;
+
+    /* Gradient */
+    --color-gradient-2: #d6d3cc;
+    --gradient-main: linear-gradient(
+        to bottom,
+        var(--color-primary),
+        var(--color-gradient-2)
+    );
+
+    /* Typography */
+    --font-family-main: "Helvetica Neue", sans-serif;
+    --font-size-sm: 0.8rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+    --font-size-3xl: 2.5rem;
+    --font-size-hero: 3rem;
+
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-xm: 8px;
+    --spacing-sm: 10px;
+    --spacing-m: 12px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 25px;
+    --spacing-xxl: 30px;
+    --spacing-3xl: 40px;
+    --spacing-4xl: 60px;
+    --spacing-big-pad: 90px;
+
+    /* Borders */
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 15px;
+    --border-radius-xxl: 20px;
+    --border-radius-3xl: 25px;
+    --border-radius-pill: 50px;
+
+    /* Height */
+    --min-height: 100vh;
+
+    /* Width */
+    --max-width-s: 400px;
+    --max-width-m: 800px;
+    --max-width-l: 1200px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+    /* Dropdown Arrow */
+    --dropdownArrowSvg: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239DB2BF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+}

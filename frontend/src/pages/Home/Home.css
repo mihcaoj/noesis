@@ -1,0 +1,103 @@
+.homepage {
+    margin-top: -40px;
+}
+
+/* Homepage header */
+.homepage-header h1 {
+    font-size: var(--font-size-hero);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.homepage-header {
+    margin-bottom: 0px;
+}
+
+/* Topics */
+.topics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-xxl) auto;
+    max-width: var(--max-width-l);
+}
+
+/* Topic Card */
+.topic-card {
+    background-color: var(--color-warm-taupe);
+    color: var(--color-text-secondary);
+    border-radius: var(--spacing-xl);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    text-align: center;
+    cursor: pointer;
+    transition:
+        transform 0.3s,
+        background-color 0.3s;
+}
+
+/* Topic Card Hover */
+.topic-card:hover {
+    transform: scale(1.1);
+    background-color: var(--color-accent);
+}
+
+/* Active filter display */
+.active-filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.active-filter {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-button);
+    color: var(--color-text-primary);
+    border-radius: var(--border-radius-pill);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
+}
+
+.remove-filter-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    margin-left: var(--spacing-sm);
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--spacing-lg);
+    height: var(--spacing-lg);
+}
+
+.remove-filter-btn:hover {
+    color: var(--color-danger);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+.logo-container img {
+    height: 180px;
+    width: auto;
+}
+
+.no-tutors-message {
+    grid-column: 1 / -1; /* Center position in the grid */
+    text-align: center;
+    color: var(--color-text-secondary);
+}
+
+.loading-container p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-xl);
+}

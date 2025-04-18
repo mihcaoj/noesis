@@ -1,0 +1,132 @@
+/* Settings Container */
+.content-container .settings-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin: 0 auto !important;
+    align-items: center;
+}
+
+/* Settings Section */
+.settings-section {
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-3xl);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Title */
+.settings-section h3 {
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    color: var(--color-text-tertiary);
+}
+
+/* Settings Content */
+.settings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Text Styling */
+.settings-content p {
+    color: var(--color-soft-cream);
+    font-size: var(--font-size-base);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Current Value Display */
+.current-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-md);
+}
+
+.current-value p {
+    margin-bottom: var(--spacing-md);
+}
+
+.current-value span {
+    color: var(--color-soft-creme);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Form Styling */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: var(--color-text-tertiary);
+    margin: var(--spacing-lg) 0px var(--spacing-sm) 0px;
+    font-size: var(--font-size-base);
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: var(--border-radius-md);
+    background-color: var(--color-soft-cream);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    padding: 0 var(--spacing-sm);
+    box-sizing: border-box;
+}
+
+/* Confirm and Cancel Buttons Container */
+.confirm-cancel-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+/* Danger Zone */
+.danger-zone {
+    border: 1px solid var(--color-danger);
+}
+
+.danger-zone h3 {
+    color: var(--color-danger);
+}
+
+.confirm-delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    width: 100%;
+}
+
+.confirm-delete p {
+    color: var(--color-danger);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Button Adjustments */
+.settings-section button {
+    min-width: 140px;
+}

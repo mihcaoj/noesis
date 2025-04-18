@@ -1,0 +1,18 @@
+@import "./core/variables.css";
+@import "./core/layouts.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 1024px;
+    font-family: "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: auto;
+}
+
+code {
+    font-family:
+        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

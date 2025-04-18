@@ -1,0 +1,72 @@
+.set-availability {
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.set-availability form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.set-availability label {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-base);
+    color: var(--color-text-tertiary);
+    width: 300px;
+}
+
+.set-availability input[type="date"],
+.set-availability input[type="time"] {
+    padding: var(--spacing-xm);
+    margin-top: var(--spacing-xm);
+    border-radius: var(--spacing-xs);
+    border: 1px solid grey;
+    background-color: var(--color-soft-cream);
+    color: var(--color-text-secondary);
+    width: 100%;
+}
+
+.set-availability input[type="checkbox"] {
+    margin-top: var(--spacing-xm);
+    align-self: flex-start;
+}
+
+.set-availability ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-sm) 0;
+    width: 100%;
+}
+
+.set-availability li {
+    margin-bottom: var(--spacing-xs);
+    padding: var(--spacing-xs);
+    border: 1px solid grey;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--color-soft-cream);
+    color: var(--color-text-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.set-availability-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    width: 100%;
+}
+
+.delete-availability-button {
+    margin: 0px;
+}
+
+.availability-list {
+    width: 100%;
+    margin-top: var(--spacing-xxl);
+    border-top: 1px solid #444;
+    padding-top: var(--spacing-sm);
+}

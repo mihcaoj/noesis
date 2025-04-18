@@ -1,0 +1,65 @@
+/********** BUTTON CONTAINER **********/
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+/********** MAIN BUTTON STYLES **********/
+.button {
+    background-color: var(--color-button);
+    color: var(--color-text-primary);
+    border: none;
+    border-radius: var(--border-radius-3xl);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+    margin-top: var(--spacing-xm);
+}
+
+/********** BUTTON VARIANTS **********/
+.button--primary {
+    background-color: var(--color-button);
+}
+
+.button--session {
+    background-color: var(--color-warm-taupe);
+    color: var(--color-text-secondary);
+}
+
+.button--danger {
+    background-color: var(--color-danger);
+}
+
+.button--success {
+    background-color: var(--color-success);
+}
+
+.button--close {
+    background-color: var(--color-button);
+}
+
+/********** HOVER EFFECTS **********/
+.button:hover {
+    transform: scale(1.025);
+}
+
+.button--primary:hover,
+.button--session:hover {
+    background-color: var(--color-accent);
+}
+
+.button--success:hover {
+    background-color: var(--color-success);
+}
+
+.button--danger:hover {
+    background-color: var(--color-danger);
+}
+
+.button--close:hover {
+    background-color: var(--color-danger);
+}

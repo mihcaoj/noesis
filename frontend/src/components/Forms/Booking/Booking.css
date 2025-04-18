@@ -1,0 +1,60 @@
+.booking-form {
+    margin: var(--spacing-sm) auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.booking-form .form-field {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+    text-align: left;
+}
+
+.booking-form .form-field::placeholder {
+    color: grey;
+    font-style: italic;
+}
+
+.booking-form label {
+    display: block;
+    color: var(--color-text-secondary);
+    margin: var(--spacing-lg) 0px var(--spacing-sm) 0px;
+    font-size: var(--font-size-base);
+    text-align: left;
+}
+
+.popout-form select {
+    width: 40%;
+}
+
+.booking-form textarea {
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid grey;
+    background-color: var(--color-soft-cream);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    padding: var(--spacing-sm) var(--spacing-sm);
+    box-sizing: border-box;
+    border-radius: var(--border-radius-md);
+}
+
+.booking-form .button-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    width: 100%;
+}
+
+.mode-info {
+    padding-top: var(--spacing-lg);
+    align-items: center;
+}

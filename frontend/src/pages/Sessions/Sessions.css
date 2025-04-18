@@ -1,0 +1,162 @@
+.session-filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xxl);
+}
+
+.button.button--session.active {
+    background-color: var(--color-accent);
+    border-bottom: 3px solid var(--color-accent-darker);
+}
+
+.sessions-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.session-item {
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    transition: transform 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.session-item:hover {
+    transform: translateY(-2px);
+}
+
+.session-item.status-pending,
+.session-item.status-reschedule_pending {
+    border-left: 5px solid var(--color-pending);
+}
+
+.session-item.status-confirmed {
+    border-left: 5px solid var(--color-success);
+}
+
+.session-item.status-completed {
+    border-left: 5px solid var(--color-completed);
+}
+
+.session-item.status-cancelled,
+.session-item.status-rejected {
+    border-left: 5px solid var(--color-danger);
+}
+
+.session-item.highlight {
+    animation: highlightFade 2s ease-in-out;
+}
+
+@keyframes highlightFade {
+    0% {
+        background-color: var(--color-secondary);
+    }
+    25% {
+        background-color: var(--color-accent);
+    }
+    50% {
+        background-color: var(--color-accent);
+    }
+    75% {
+        background-color: var(--color-secondary);
+    }
+}
+
+.session-info h4 {
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: var(--font-size-lg);
+}
+
+.session-time {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-base);
+    margin: var(--spacing-sm) 0px var(--spacing-sm) 0px;
+}
+
+.session-mode,
+.session-topic,
+.session-duration {
+    color: var(--color-text-primary);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.session-mode strong,
+.session-topic strong,
+.session-duration strong {
+    color: var(--color-text-tertiary);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.session-notes {
+    color: var(--color-text-primary);
+    margin: 0 0 0 0;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid #404040;
+}
+
+.session-notes strong {
+    color: var(--color-text-tertiary);
+}
+
+.loading {
+    text-align: center;
+    color: var(--color-text-secondary);
+    padding: var(--spacing-3xl);
+}
+
+.no-sessions {
+    text-align: center;
+    color: var(--color-text-tertiary);
+    padding: var(--spacing-3xl);
+    background-color: var(--color-secondary);
+    border-radius: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.session-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.session-actions button {
+    padding: 8px 16px;
+    margin-top: 0px;
+    margin-bottom: var(--spacing-md);
+}
+
+.session-actions .confirm-cancel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    width: 100%;
+}
+
+.session-actions .confirm-cancel-container p {
+    font-weight: var(--font-weight-bold);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.session-actions .confirm-cancel-container div {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.session-actions .confirm-cancel-container button {
+    min-width: 100px;
+}
+
+.session-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}

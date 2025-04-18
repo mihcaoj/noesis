@@ -1,0 +1,43 @@
+# Node.js (frontend)
+frontend/node_modules/
+frontend/.pnp/
+frontend.pnp.js
+
+# Testing
+frontend/coverage/
+
+# Production build (frontend)
+frontend/build/
+
+# Misc (frontend)
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Python (backend)
+backend/__pycache__/       # Python bytecode cache
+
+# Django migrations (backend)
+backend/**/*.pyc
+
+# Backend media
+backend/media/*
+backend/profile_pictures/*
+
+# Misc (backend)
+.DS_Store
+
+# Environment variables
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# Project-specific configuration and cached information
+.ropeproject
+
+# Virutal Environment
+venv
+
+# Node modules
+node_modules/
